@@ -1,5 +1,5 @@
 # ITAP-COSC-3411-Lambda
-SP Project 
+
 # Mini Shell in Python - Lambda
 
 A simple command-line shell implemented in Python that executes basic system commands and provides built-in utilities.
@@ -68,7 +68,8 @@ Commands: cd, pwd, echo, help, exit, quit + system commands
 
 
 
-# exit: Goodbye! 👋
+# exit: 
+Goodbye! 👋
 
 
 
