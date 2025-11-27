@@ -10,7 +10,7 @@ A simple command-line shell implemented in Python that executes basic system com
 
 
 # Installation
-1. **Clone the repository**:
+ **Clone the repository**:
    bash
    git clone: https://github.com/Robakhalid1/ITAP-COSC-3411-Lambda
    cd Alpha
