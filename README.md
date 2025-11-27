@@ -23,9 +23,7 @@ Execute the shell with: python3 mini_shell.py
 
 # Usage Example
 
-pwd 
-
-/home/noura
+pwd: /home/noura
 
 
 ls 
@@ -55,29 +53,18 @@ file2.txt      noura1           python.sh      ruba.sh  yourid.txt
 
 
 
-mkdir and cd 
-
-
-Now in: /home/noura/new_folder
+mkdir and cd : Now in: /home/noura/new_folder
 
 
 
-echo “Hello world”
+echo “Hello world”: Hello world
 
 
-Hello world
+help: Commands: cd, pwd, echo, help, exit, quit + system commands
 
 
-help
 
-
-Commands: cd, pwd, echo, help, exit, quit + system commands
-
-
-exit
-
-
-Goodbye! 👋
+exit: Goodbye! 👋
 
 
 
