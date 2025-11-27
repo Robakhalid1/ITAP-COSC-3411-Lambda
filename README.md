@@ -28,15 +28,15 @@ pwd
 
 
 ls 
+
 201801733.txt  file3.txt        noura2018.txt  q10.sh   salary.sh
-array.sh       firstprogram.py  nouram.sh      q3.sh    square.sh
+
 bobdi          firstpython.py   noura.sh       q4.sh    sunday.txt
-bobdi.sh       grades.sh        noura.txt      q5.sh    systemprogramming.txt
+
 deema.sh       hi.sh            Pictures       q6.sh    Templates
-Desktop        math.sh          Public         q7.sh    try2.sh
+
 Documents      Music            py             q8.sh    try.sh
-Downloads      NewDirectory     py.sh          q9.sh    Videos
-file1.txt      nouni            python.py      quiz.py  yo
+
 file2.txt      noura1           python.sh      ruba.sh  yourid.txt
 
 
