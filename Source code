@@ -1,0 +1,65 @@
+
+
+  GNU nano 8.2                            firstpython.py      
+
+                               
+#!/usr/bin/env python3
+"""
+Mini Shell in Python - Lambda
+"""
+
+import os
+import subprocess
+import shlex
+
+class MiniShell:
+    def __init__(self):
+        self.running = True
+        self.commands = {
+            'exit': lambda _: self._stop(),
+            'quit': lambda _: self._stop(),
+            'cd': self._cd,
+            'pwd': lambda _: print(os.getcwd()),
+            'echo': lambda args: print(' '.join(args)),
+            'help': lambda _: print("Commands: cd, pwd, echo, help, exit, quit + system comm>
+            'clear': lambda _: os.system('clear' if os.name == 'posix' else 'cls')
+        }
+
+    
+    def _stop(self):
+        print("Goodbye! 👋")
+        self.running = False
+    
+    def _cd(self, args):
+        try:
+            os.chdir(args[0] if args else os.path.expanduser("~"))
+            print(f"Now in: {os.getcwd()}")
+        except Exception as e:
+            print(f"cd: {e}")
+    
+    def run(self):
+        print("Mini Shell - Type 'help' for commands")
+        
+        while self.running:
+            try:
+                cmd_input = input("λ > ").strip()
+                if not cmd_input:
+                    continue
+                
+                parts = shlex.split(cmd_input)
+                cmd, args = parts[0], parts[1:]
+                
+                if cmd in self.commands:
+                    self.commands[cmd](args)
+                else:
+                    subprocess.run([cmd] + args, cwd=os.getcwd())
+                    
+            except (KeyboardInterrupt, EOFError):
+                print("\nUse 'exit' to quit")
+            except Exception as e:
+                print(f"Error: {e}")
+
+if __name__ == "__main__":
+    MiniShell().run()
+
+
